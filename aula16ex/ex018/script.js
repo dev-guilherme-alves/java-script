@@ -1,0 +1,28 @@
+let num = document.querySelector('input#fmum')
+let lista = document.querySelector('select#flista')
+let res = document.querySelector('div#res')
+let valores = []
+
+function isNumero(n) {
+    if(Number(n) >= 1 && Number(n) <= 100) {
+        return true
+    } else {
+        return false
+    }
+}
+
+function inLista(n) {
+    if (l.indexOf(Number(n)) != -1) {
+        return true
+    } else {
+        return false
+    }
+}
+
+function adicionar() {
+    if(isNumero(num.value) && !inLista(num.value)) {
+
+    } else {
+        window.alert('Valor invalido ou ja encontrado na lista')
+    }
+}
